@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+header.hero {
+    height: 700px;
+    background-image: url(../imagens/topo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+}
+header.hero ul {
+    display: inline-block;
+    text-align: right;
+    margin: 0;
+}
+header.hero li {
+    display: inline-block;
+    padding: 10px;
+    list-style-type: none;
+    text-transform: uppercase;
+    color: white;
+}
+section.showcase {
+    width: 50%;
+    margin: 80px auto;
+}
+    section.showcase h1 {
+        text-align: center;
+        font-size: 32px;
+    }
+    section.showcase p {
+        text-align: center;
+        line-height: 28px;
+    }
+
+div.card-container {
+    width: 55%;
+    margin: auto;
+}
+    div.cards {
+        display: inline-block;
+        width: 33%;
+        padding: 0;
+    }
+        div.cards img {
+            width: 100%;
+        }
+    div p.model-name {
+        font-size: 22px;
+        font-weight: normal;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 3px;
+    }
+    div p.model-personality {
+        color: rgb(159, 159, 159);
+        text-align: center;
+    }
+
+section.secondshowcase {
+    width: 80%;
+    height: 800px;
+    margin: 60px auto;
+    background-image: url(../imagens/bg_detalhe.png);
+    background-position: top right;
+    background-size: cover;
+}
+section.secondshowcase h2 {
+    font-weight: normal;
+    width: 70%;
+    padding-top: 120px;
+    padding-left: 120px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 4em;
+}
+section.secondshowcase p {
+    font-size: 28px;
+    color: white;
+    width: 45%;
+    padding-left: 120px;
+
+}
+h2 {
+    color:rgb(1, 1, 43);
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+}
+iframe {
+    width: 100%;
+    height: 600px;
+    margin: 60px auto;
+}
+footer p {
+    background-color: black;
+    height: 120px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    line-height: 120px;
+    margin: 0;
+}
