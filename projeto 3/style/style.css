@@ -1,0 +1,109 @@
+@charset "UFT-8";
+
+body, main {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+div.main-header {
+    background-image: url(../imagens/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    width: 37%;
+    height: 100%;
+    text-align: right;
+}
+div.main-header img {
+    border-radius: 50%;
+    margin-top: 140px;
+    margin-right: 90px;
+    margin-bottom: 0;
+}
+div.main-header h1 {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.309);
+    color: rgba(237, 236, 236, 0.953);
+    margin-top: 40px;
+    margin-right: 80px;
+    line-height: 1.2;
+}
+div.main-header strong {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.309);
+    color: rgba(255, 255, 255, 0.922);
+}
+.main-header p#credits { 
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.309);
+    color: rgba(119, 119, 119, 0.479);
+    margin-top: 30px;
+    margin-right: 80px;
+}
+.main-header p#credits2 { 
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.309);
+    color: rgba(255, 255, 255, 0.479);
+    margin-top: 550px;
+    margin-right: 80px;
+}
+main h2 {
+    color: rgb(101, 101, 101);
+}
+div.main-container {
+    float: right;
+    margin-top: 130px;
+    margin-right: 200px;
+    width: 50%;
+    height: 100%;
+}
+div.main-container picture {
+    display: inline-block;
+    width: 40%;
+    margin: 0;
+}
+div.recent-works img {
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.603);
+    margin: 20px 30px 20px 0px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+    color: rgb(99, 98, 98);
+}
+table th {
+    padding:10px;
+    background-color: lightgrey;
+    color: rgb(74, 74, 74);
+    border-bottom: 1px solid black;
+}
+table td {
+    padding: 10px;
+}
+table tr:nth-last-child(even) {
+    background-color: rgb(239, 237, 237);
+}
+table tr:nth-last-child(1) {
+    border-bottom: 1px solid black;
+}
+a.button-1 {
+    text-shadow: 1px 1px 1px solid rgba(0, 0, 0, 0.755);
+    display: inline-block;
+    color: grey;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 15px 25px;
+    border: 0.8px solid rgba(0, 0, 0, 0.737);
+    margin: 20px 0px;
+    cursor: pointer;
+}
+a.button-1:hover {
+    color: azure;
+    text-shadow: 1px 1px 1px solid black;
+    background-color: rgba(90, 46, 7, 0.699);
+    transition-duration: 0.5s;
+    scale: 104%;
+}
+hr {
+    display: block;
+    border: 0.5px solid black;
+    box-sizing: border-box;
+}
