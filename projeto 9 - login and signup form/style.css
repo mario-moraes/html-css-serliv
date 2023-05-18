@@ -1,0 +1,70 @@
+@charset "UFT-8";
+body {
+    min-height: 100vh;
+    margin: 0;
+    background-color: #3a68b7;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-form {
+    background-color: #ffffff;
+    width: 400px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.284);
+}
+
+fieldset {
+    border: none;
+    color: #3a68b7;
+}
+legend{
+    font-size: 32px;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+label {
+    color:  grey;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+input {
+    width: 100%;
+    margin: 20px 0;
+    border: none;
+    border-bottom: 1px solid #3a68b7;
+    outline: none;
+}
+
+.link-wrapper {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+button {
+    color: white;
+    border: none;
+    background-color: #3a68b7;
+    padding: 15px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.283);
+    font-weight: bolder;
+}
+.link1 {
+    text-decoration: none;
+    color:  #3a68b7;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+}
+.link2 {
+    color:  #3e64a7;
+    font-size: 12px;
+}
