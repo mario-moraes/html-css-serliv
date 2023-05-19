@@ -1,70 +1,86 @@
 @charset "UFT-8";
+
+:root {
+    --login-primary-color: #3a68b7;
+}
 body {
-    min-height: 100vh;
     margin: 0;
-    background-color: #3a68b7;
-    font-family: sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
+    background-color: var(--login-primary-color);
+    font-family: Roboto, sans-serif;
 }
-.login-form {
-    background-color: #ffffff;
-    width: 400px;
-    height: 250px;
+.form {
+    width: 80%;
+    max-width: 32rem;
+    background-image: linear-gradient(to right, #0000004d .5rem, #ffffff .5rem);
+}
+.form__fieldset {
+    border: none;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.284);
+    gap: .25em;
+    padding: 2rem;
 }
-
-fieldset {
-    border: none;
-    color: #3a68b7;
+.form__title {
+    font-weight: 300;
+    font-size: 2rem;
+    color: var(--login-primary-color);
+    padding-top: 2rem;
 }
-legend{
-    font-size: 32px;
-    font-weight: 200;
-    margin-bottom: 10px;
-}
-label {
-    color:  grey;
+.form__label {
+    font-size: .8rem;
     text-transform: uppercase;
-    font-size: 12px;
+    font-weight: 300;
 }
-input {
-    width: 100%;
-    margin: 20px 0;
+.form__input {
+    padding: .5em 0;
+    font-size: 1.2 rem;
     border: none;
-    border-bottom: 1px solid #3a68b7;
+    border-radius: 0;
+    border-bottom: 1px solid var(--login-primary-color);
+    margin-bottom: .8rem;
     outline: none;
+    transition: padding-left .08s;
+}
+.form__input:focus {
+    outline: 2px solid var(--login-primary-color);
+    padding-left: .3rem;
 }
 
-.link-wrapper {
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-}
-button {
-    color: white;
-    border: none;
-    background-color: #3a68b7;
-    padding: 15px;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.283);
-    font-weight: bolder;
-}
-.link1 {
-    text-decoration: none;
-    color:  #3a68b7;
+.form__btn {
     text-transform: uppercase;
-    font-size: 12px;
-    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    padding: .8rem 1.2rem;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #ffffff;
 }
-.link2 {
-    color:  #3e64a7;
-    font-size: 12px;
+.primary-btn {
+    background-color: var(--login-primary-color);
+    color: #ffffff;
 }
+.secondary-btn {
+    color: var(--login-primary-color);
+}
+.form__action {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.form__action__aside {
+    font-size: .85rem;
+    flex-grow: 1;
+    text-align: right;
+}
+.form__action__aside link {
+    text-decoration: none;
+    color: inherit;
+}
+

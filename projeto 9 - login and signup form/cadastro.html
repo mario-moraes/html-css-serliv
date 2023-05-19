@@ -11,15 +11,18 @@
 <body>
     <form class="form" action="#" method="post" autocomplete="off">
         <fieldset class="form__fieldset">
-            <legend class="form__title">Login</legend>
+            <legend class="form__title">Cadastre-se</legend>
             <label class="form__label" for="user">Usuário</label>
                 <input class="form__input" type="text" name="user" id="user" required>
+            <label class="form__label" for="email">E-mail</label>
+                <input class="form__input" type="email" name="email" id="email" required>
             <label class="form__label" for="password">Senha</label>
                 <input class="form__input" type="password" name="password" id="password" required>
             <div class="form__action">
-                <input class="form__btn primary-btn" type="submit" value="Login">
-                <a class="form__btn secondary-btn" href="cadastro.html">Cadastrar-se</a>
-                <a class="form__action__aside" href="#">Esqueci minha senha</a>
+                <input class="form__btn primary-btn" type="submit" value="cadastre-se">
+                <p class="form__action__aside">
+                    Já possui cadastro? <a class="form__action__aside link" href="index.html">Faça login</a>
+                </p>
             </div>
         </fieldset>
     </form>
