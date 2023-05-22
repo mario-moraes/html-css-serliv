@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>My Components project</title>
+</head>
+<body>
+    <header class="main-header">
+        <nav class="main-nav">
+            <a href="#">
+                <img class="perfil-img" src="imagens/perfil.png" alt="autor da pagina">
+            </a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tipografia.html">Tipografia</a></li>
+                <li><a href="cards.html">Cards</a></li>
+                <li><a href="listas.html">Listas</a></li>
+                <li><a href="botoes.html">Formulários</a></li>
+                <li><a href="tabelas.html">Botões</a></li>
+                <li><a href="tabelas.html">Tabelas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <h1>My Components</h1>
+        <article class="highlight">
+            <h2>Tipografia</h2>
+            <p>
+                A tipografia transmite nossas definições de tamanhos e espaçamento e deve ser utilizada respeitando a hierarquia dos elementos na interface.
+            </p>
+        </article>
+        <section>
+            <h3>Elementos</h3>
+            <article>
+                <h4>Textos</h4>
+                <p>
+                    Esse texto esta escrito em <b>negrito</b> e esse texto é um texto <strong>forte</strong>.
+                </p>
+                <p>
+                    Este texto está em <i>itálico</i> e este está <em>com ênfase</em>.
+                </p>
+                <p>
+                    Isto é um texto <u>sublinhado</u> e isto é um <a href="#">link</a>.
+                </p>
+                <p>
+                    Cuidado com as tags u, b etc. Dê sempre preferência para estilizações através do CSS.
+                </p>
+            </article>
+            <article>
+                <h4>Sobrescrito e subscrito</h4>
+                <p>
+                    3<sup>2</sup> é igual a 9.
+                </p>
+                <p>
+                    A fórmula da água é H<sub>2</sub>O.
+                </p>
+            </article>
+            <article>
+                <h4>Abreviações</h4>
+                <p>
+                    Para criar páginas na web precisamos aprender sobre
+                        <a href="#html-dfn"></a>
+                        <abbr title="HiperText Markup Language">HTML</abbr>
+                </p>
+                <p>
+                    O 
+                    <dfn id="html-dfn"> 
+                        <abbr title="HiperText Markup Language">HTML</abbr>
+                    </dfn> é a principal linguagem da web onde podemos incluir o conteúdo de forma semântica.
+                </p>
+            </article>
+            <article>
+                <h4>Citações</h4>
+                <p>
+                    De acordo com o site Mozilla, 
+                    <q cite="https://www.mozilla.org/en-US/about/history/details/">"Firefox 1.0 foi lançado em 2004 e se tornou um grande sucesso"</q>
+                </p>
+                    <p>
+                      <blockquote>  
+                        Isto é um paragrafo de citação, indica que o texto incluído é uma longa citação. Normalmente, este é processado visualmente pelo recuo. Uma URL para a fonte da citação pode ser dada usando o atributo cite.
+                    </blockquote> 
+                    </p>
+                    <p>
+                        O filme <cite>Mad Max: Fury Road</cite> contém uma fotografia incrivel.
+                    </p>
+            </article>
+            <article>
+                <h4>Coisas de computador</h4>
+                <p>
+                    A propriedade <code>background-color</code> do CSS serve para modificar a cor de fundo.  
+                </p>
+                <pre>
+                    Este texto é pré-formatado.
+                    Ele leva em conta as identações
+                    e quebras de linha.
+                </pre>
+                <p>
+                    Após executar o método <code>push()</code> obtive o retorno 
+                    <samp lang="en-US">
+                        undefined: push() not found.
+                    </samp>
+                </p>
+                <p>
+                    Pressione a tecla <kbd>CTRL</kbd> + <kbd>C</kbd> para copiar.
+                </p>
+            </article>
+            <article>
+                <h4>Datas e horários</h4>
+                <p>
+                    O evento ocorrerá em 
+                    <time datetime="2025-11-10">
+                        10 de novembro de 2025
+                    </time>.
+                </p>
+                <p>
+                    O eventou ocorreu em <time datetime="1997-03-31">31/03/1997</time>.
+                </p>
+                <p>A criança nasceu às <time datetime="16:29">16h29</time>.</p>
+                <p>
+                    O Eclipse irá ocorrer exatamente às <time datetime="2024-01-06T20:30:10-03:00">20h30m10s do dia 21/06/2024</time>.
+                </p>
+                <p>
+                    A comemoração que ocorreria dia <del datetime="2030-05-01">
+                        <time datetime="2030-05-16">16/05/2030</time>
+                    </del> foi cancelada e mudou para 
+                    <ins>
+                        <time datetime="2030-05-20">20/05/2030</time>
+                    </ins>.
+                </p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
