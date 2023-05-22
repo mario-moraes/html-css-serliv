@@ -4,6 +4,7 @@
     --primary-color: #FF7833;
     --secondary-color: #31333B;
     --seconday-color-light: #444856;
+    --secondary-color-dark: #23252d;
     --terciary-color: #7b7b7b;
     --text-color: #e7e7e7;
 }
@@ -114,6 +115,62 @@ a {
     gap: 3rem;
     padding-top: 1.5rem;
 }
+.row .row {
+    padding-top: 0;
+}
 .row > * {
     flex: 1 0 0%;
+}
+input,
+label,
+textarea,
+select {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+}
+input[type="radio"], input[type="checkbox"] {
+    width: auto;
+}
+input, 
+textarea, 
+select {
+    background-color: var(--text-color);
+    padding: 1.2rem;
+    border-radius: 5px;
+    margin-bottom: 1.6rem;
+    border: 0;
+}
+.btn {
+    background-color: var(--seconday-color-light);
+    color: white;
+    border: 2px solid var(--secondary-color-dark);
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0.8em 1.2em;
+    border-radius: 5px;
+}
+.btn + .btn {
+    margin-left: 2rem;
+}
+.btn-stroke {
+    background-color: transparent;
+}
+.btn-big {
+    font-size: 1.6rem;
+}
+.btn:hover, .btn:focus {
+    background-color: var(--secondary-color-dark);
+}
+.form-quiz {
+    width: calc(50%-1.5rem);
+}
+.btn-full {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+}
+.btn-full + .btn-full {
+    margin-left: 0;
+    margin-top: 2rem;
 }
