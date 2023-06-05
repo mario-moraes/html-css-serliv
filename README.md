@@ -1,2 +1,2 @@
 # html-css-serliv
-Projetos e exercicios referente ao curso de html, css e javascript do SerLiv na Udemy.
+html5 and css3 projects (frontend course)
