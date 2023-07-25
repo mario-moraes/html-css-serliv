@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TicTacToeGame</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section class="game-container">
+    <h1>#TicTacToe</h1>
+    <p class="game-instructions">Insert player name and click on "Start Game" to begin. Complete a row or collum in any direction to win the game!</p>
+    
+    <form>  
+      <label for="player-one">Player one "X":<label>
+      <input type="text" name="player-one"id="player-one">
+      <label for="player-two">Player two "O":<label>
+      <input type="text" name="player-two"id="player-two">
+      <button id="start-game-btn" class="start-btn">Start Game</button>
+    </form>
+    
+    <h2><span id="players-turn">Player Turn:</span></h2>
+    <div class="board-container">
+      <section id="board">
+        <span data-region="0.0"></span>
+        <span data-region="0.1"></span>
+        <span data-region="0.2"></span>
+        <span data-region="1.0"></span>
+        <span data-region="1.1"></span>
+        <span data-region="1.2"></span>
+        <span data-region="2.0"></span>            <span data-region="2.1"></span>
+        <span data-region="2.2"></span>
+      </section>
+    </div>
+  </section>
+</body>
+</html>
