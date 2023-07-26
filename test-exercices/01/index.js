@@ -32,7 +32,7 @@ function addTech() {
     const LabelRadioExp3 = createLabelElement(`tech-exp-${liID}.3`, `11-15 anos`);  
     const removeTechBtn = document.createElement(`button`);
     removeTechBtn.innerText = `Remover`;
-    removeTechBtn.addEventListener(`click`, function(){techList.removeChild(li)});
+    removeTechBtn.addEventListener(`click`, function(){techList.removeChild(li)}); 
     li.append(
         LabelTechName, 
         InputTechName, 
